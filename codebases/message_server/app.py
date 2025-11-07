@@ -93,7 +93,7 @@ def post_message():
     cursor.execute("INSERT INTO messages (message) VALUES (%s);", (message,))
     connection.commit()
 
-    # And redirect to the main page
+    # And redirect to the main page. 
     return redirect(url_for("get_messages"))
 
 if __name__ == '__main__':
